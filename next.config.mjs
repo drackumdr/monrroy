@@ -5,6 +5,9 @@ const nextConfig = {
   output: 'export',
   basePath: isProd ? '/monrroy' : '',
   assetPrefix: isProd ? '/monrroy' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/monrroy' : '',
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

@@ -85,7 +85,7 @@ export function Hero() {
           <AnimatedSection delay={200} className="relative">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/hero.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero.jpg`}
                 alt="Dr. Gustavo Monrroy - Especialista en Ortopedia y Traumatología"
                 fill
                 className="object-cover"

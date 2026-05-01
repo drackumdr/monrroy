@@ -36,7 +36,7 @@ export function Navbar() {
           <Link href="#inicio" className="flex items-center">
             <div className="bg-white/90 rounded-xl p-1 shadow-sm">
               <Image
-                src="/logo.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo.jpg`}
                 alt="Orthopedic Center Cd. Juárez"
                 width={44}
                 height={44}

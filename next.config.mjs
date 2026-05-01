@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.GITHUB_ACTIONS === 'true'
+
 const nextConfig = {
   output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  basePath: isProd ? '/monrroy' : '',
+  assetPrefix: isProd ? '/monrroy' : '',
   env: {
-    NEXT_PUBLIC_BASE_PATH: '',
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/monrroy' : '',
   },
   typescript: {
     ignoreBuildErrors: true,

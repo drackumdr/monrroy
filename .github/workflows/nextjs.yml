@@ -48,14 +48,13 @@ jobs:
 
       - name: Build with Next.js
         run: pnpm next build
-
-      - name: Prepare for deployment
-        run: mkdir monrroy && mv out/* monrroy/
+        env:
+          GITHUB_ACTIONS: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./monrroy
+          path: ./out
 
   deploy:
     environment:

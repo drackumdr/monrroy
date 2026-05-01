@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Orthopedic Center Cd. Juárez | Dr. Gustavo Monrroy · Columna y Rodilla',
+  title: 'Orthopedic Center Cd. Juárez | Dr. Gustavo Monroy · Columna y Rodilla',
   description: 'Especialistas en cirugía de columna, rodilla y traumatología en Cd. Juárez. Hospitales Star Médica, Consultorio 909. Agenda tu cita: (656) 113-2264.',
-  keywords: 'ortopedista Ciudad Juárez, cirugía de columna Juárez, cirugía de rodilla, Star Médica consultorio 909, Dr. Monrroy',
+  keywords: 'ortopedista Ciudad Juárez, cirugía de columna Juárez, cirugía de rodilla, Star Médica consultorio 909, Dr. Monroy',
   generator: 'v0.app',
   icons: {
     icon: [

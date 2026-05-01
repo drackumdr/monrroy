@@ -131,7 +131,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-[#F8F8FA]/10 text-center">
           <p className="font-[family-name:var(--font-inter)] text-[#8A88A8] text-sm">
-            © 2025 Orthopedic Center Cd. Juárez · Dr. Gustavo Monrroy. Todos los derechos reservados.
+            © 2025 Orthopedic Center Cd. Juárez · Dr. Gustavo Monroy. Todos los derechos reservados.
           </p>
         </div>
       </div>

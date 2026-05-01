@@ -24,7 +24,7 @@ export function PrpSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-square max-w-md mx-auto lg:mx-0">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH}/prp.jpg`}
-                alt="Terapia PRP - Plasma Rico en Plaquetas - Dr. Gustavo Monrroy"
+                alt="Terapia PRP - Plasma Rico en Plaquetas - Dr. Gustavo Monroy"
                 fill
                 className="object-cover"
               />

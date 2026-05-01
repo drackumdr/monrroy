@@ -20,7 +20,7 @@ export function About() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH}/prp.jpg`}
-                alt="Dr. Gustavo Monrroy en consulta con paciente"
+                alt="Dr. Gustavo Monroy en consulta con paciente"
                 fill
                 className="object-cover"
               />
@@ -35,7 +35,7 @@ export function About() {
               Un especialista comprometido con tu recuperación.
             </h2>
             <p className="font-[family-name:var(--font-inter)] text-[#0A0A0A]/80 leading-relaxed mb-4">
-              El Dr. Gustavo Monrroy es especialista en Ortopedia y Traumatología, con subespecialidad en Cirugía de Columna y Rodilla. Atiende en Hospitales Star Médica, Consultorio 909, Cd. Juárez, Chihuahua.
+              El Dr. Gustavo Monroy es especialista en Ortopedia y Traumatología, con subespecialidad en Cirugía de Columna y Rodilla. Atiende en Hospitales Star Médica, Consultorio 909, Cd. Juárez, Chihuahua.
             </p>
             <p className="font-[family-name:var(--font-inter)] text-[#0A0A0A]/80 leading-relaxed mb-8">
               Su enfoque combina precisión quirúrgica con trato cercano y humano. Cada paciente recibe una explicación clara de su diagnóstico, opciones de tratamiento y proceso de recuperación.

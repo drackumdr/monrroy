@@ -26,7 +26,7 @@ export function Hero() {
               Recupera tu movilidad, recupera tu vida.
             </h1>
             <p className="font-[family-name:var(--font-inter)] text-lg text-[#F8F8FA]/90 mb-8 leading-relaxed max-w-xl">
-              El Dr. Gustavo Monrroy combina más de 15 años de experiencia quirúrgica con tecnología mínimamente invasiva para devolverle calidad de vida a cada paciente.
+              El Dr. Gustavo Monroy combina más de 15 años de experiencia quirúrgica con tecnología mínimamente invasiva para devolverle calidad de vida a cada paciente.
             </p>
 
             {/* Badges */}
@@ -86,7 +86,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero.jpg`}
-                alt="Dr. Gustavo Monrroy - Especialista en Ortopedia y Traumatología"
+                alt="Dr. Gustavo Monroy - Especialista en Ortopedia y Traumatología"
                 fill
                 className="object-cover"
                 priority

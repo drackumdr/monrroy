@@ -14,12 +14,12 @@ export function Hero() {
   ]
 
   return (
-    <section id="inicio" className="bg-[#2458D9] pt-20 min-h-screen flex items-center">
+    <section id="inicio" className="bg-gradient-to-br from-[#2A2A8E] via-[#3535B0] to-[#1A72E8] pt-20 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <AnimatedSection className="text-[#F8F8FA]">
-            <p className="font-[family-name:var(--font-inter)] text-[#2BB8F2] text-sm uppercase tracking-wider mb-4">
+            <p className="font-[family-name:var(--font-inter)] text-[#00C0F0] text-sm uppercase tracking-wider mb-4">
               HOSPITALES STAR MÉDICA · CONSULTORIO 909 · CD. JUÁREZ
             </p>
             <h1 className="font-[family-name:var(--font-poppins)] font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-balance">
@@ -45,7 +45,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link
                 href="#contacto"
-                className="bg-[#F8F8FA] text-[#2458D9] px-8 py-4 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-center hover:bg-white transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-[#F5F4FA] text-[#3535B0] px-8 py-4 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-center hover:bg-white transition-colors inline-flex items-center justify-center gap-2"
               >
                 Agendar mi cita
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-[#F8F8FA]/20">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <div className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#2BB8F2]">
+                  <div className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#00C0F0]">
                     {stat.value}
                   </div>
                   <div className="font-[family-name:var(--font-inter)] text-sm text-[#F8F8FA]/70 mt-1">
@@ -91,13 +91,13 @@ export function Hero() {
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2458D9]/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#2A2A8E]/40 to-transparent" />
             </div>
             {/* Floating Card */}
             <div className="absolute -bottom-6 -left-6 bg-[#F8F8FA] p-4 rounded-xl shadow-lg hidden lg:block">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-[#2BB8F2]/20 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-[#2BB8F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 bg-[#00C0F0]/20 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#00C0F0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>

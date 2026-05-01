@@ -35,7 +35,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contacto" className="bg-[#D9D9DE] py-20 lg:py-28">
+    <section id="contacto" className="bg-[#E8E5F5] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#0A0A0A] mb-4">
@@ -52,8 +52,8 @@ export function Contact() {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               {isSuccess ? (
                 <div className="text-center py-12">
-                  <div className="w-16 h-16 bg-[#2BB8F2]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#2BB8F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-[#00C0F0]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-[#00C0F0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -65,7 +65,7 @@ export function Contact() {
                   </p>
                   <button
                     onClick={() => setIsSuccess(false)}
-                    className="mt-6 text-[#2458D9] font-[family-name:var(--font-poppins)] font-medium hover:underline"
+                    className="mt-6 text-[#3535B0] font-[family-name:var(--font-poppins)] font-medium hover:underline"
                   >
                     Enviar otra solicitud
                   </button>
@@ -86,7 +86,7 @@ export function Contact() {
                         required
                         value={formState.nombre}
                         onChange={(e) => setFormState({ ...formState, nombre: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-[#D9D9DE] focus:border-[#2458D9] focus:ring-2 focus:ring-[#2458D9]/20 outline-none transition-colors font-[family-name:var(--font-inter)]"
+                        className="w-full px-4 py-3 rounded-lg border border-[#E8E5F5] focus:border-[#3535B0] focus:ring-2 focus:ring-[#3535B0]/20 outline-none transition-colors font-[family-name:var(--font-inter)]"
                         placeholder="Tu nombre"
                       />
                     </div>
@@ -103,7 +103,7 @@ export function Contact() {
                         required
                         value={formState.telefono}
                         onChange={(e) => setFormState({ ...formState, telefono: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-[#D9D9DE] focus:border-[#2458D9] focus:ring-2 focus:ring-[#2458D9]/20 outline-none transition-colors font-[family-name:var(--font-inter)]"
+                        className="w-full px-4 py-3 rounded-lg border border-[#E8E5F5] focus:border-[#3535B0] focus:ring-2 focus:ring-[#3535B0]/20 outline-none transition-colors font-[family-name:var(--font-inter)]"
                         placeholder="(656) 000-0000"
                       />
                     </div>
@@ -123,7 +123,7 @@ export function Contact() {
                         required
                         value={formState.email}
                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-[#D9D9DE] focus:border-[#2458D9] focus:ring-2 focus:ring-[#2458D9]/20 outline-none transition-colors font-[family-name:var(--font-inter)]"
+                        className="w-full px-4 py-3 rounded-lg border border-[#E8E5F5] focus:border-[#3535B0] focus:ring-2 focus:ring-[#3535B0]/20 outline-none transition-colors font-[family-name:var(--font-inter)]"
                         placeholder="tu@email.com"
                       />
                     </div>
@@ -138,7 +138,7 @@ export function Contact() {
                         id="motivo"
                         value={formState.motivo}
                         onChange={(e) => setFormState({ ...formState, motivo: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-[#D9D9DE] focus:border-[#2458D9] focus:ring-2 focus:ring-[#2458D9]/20 outline-none transition-colors font-[family-name:var(--font-inter)] bg-white"
+                        className="w-full px-4 py-3 rounded-lg border border-[#E8E5F5] focus:border-[#3535B0] focus:ring-2 focus:ring-[#3535B0]/20 outline-none transition-colors font-[family-name:var(--font-inter)] bg-white"
                       >
                         <option value="">Seleccionar...</option>
                         <option value="columna">Dolor de columna</option>
@@ -163,7 +163,7 @@ export function Contact() {
                       rows={4}
                       value={formState.mensaje}
                       onChange={(e) => setFormState({ ...formState, mensaje: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg border border-[#D9D9DE] focus:border-[#2458D9] focus:ring-2 focus:ring-[#2458D9]/20 outline-none transition-colors font-[family-name:var(--font-inter)] resize-none"
+                      className="w-full px-4 py-3 rounded-lg border border-[#E8E5F5] focus:border-[#3535B0] focus:ring-2 focus:ring-[#3535B0]/20 outline-none transition-colors font-[family-name:var(--font-inter)] resize-none"
                       placeholder="Cuéntanos brevemente tu situación..."
                     />
                   </div>
@@ -175,7 +175,7 @@ export function Contact() {
                       required
                       checked={formState.privacidad}
                       onChange={(e) => setFormState({ ...formState, privacidad: e.target.checked })}
-                      className="mt-1 w-4 h-4 rounded border-[#D9D9DE] text-[#2458D9] focus:ring-[#2458D9]"
+                      className="mt-1 w-4 h-4 rounded border-[#E8E5F5] text-[#3535B0] focus:ring-[#3535B0]"
                     />
                     <label
                       htmlFor="privacidad"
@@ -188,7 +188,7 @@ export function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#2458D9] text-[#F8F8FA] px-8 py-4 rounded-lg font-[family-name:var(--font-poppins)] font-semibold hover:bg-[#5963C7] transition-colors disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
+                    className="w-full bg-gradient-to-r from-[#2A2A8E] to-[#3535B0] text-[#F5F4FA] px-8 py-4 rounded-lg font-[family-name:var(--font-poppins)] font-semibold hover:from-[#3535B0] hover:to-[#4B45C4] transition-all disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       <>

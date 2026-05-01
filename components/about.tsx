@@ -12,7 +12,7 @@ export function About() {
   ]
 
   return (
-    <section id="acerca" className="bg-[#F8F8FA] py-20 lg:py-28">
+    <section id="acerca" className="bg-[#F5F4FA] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
@@ -26,7 +26,7 @@ export function About() {
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full bg-[#2BB8F2]/20 rounded-2xl" />
+            <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full bg-[#3535B0]/15 rounded-2xl" />
           </AnimatedSection>
 
           {/* Content */}
@@ -46,7 +46,7 @@ export function About() {
               {credentials.map((credential, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-[#2BB8F2] mt-0.5 flex-shrink-0"
+                    className="w-5 h-5 text-[#00C0F0] mt-0.5 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

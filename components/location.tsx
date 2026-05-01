@@ -4,7 +4,7 @@ import { AnimatedSection } from "./animated-section"
 
 export function Location() {
   return (
-    <section className="bg-[#F8F8FA] py-20 lg:py-28">
+    <section className="bg-[#F5F4FA] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#0A0A0A] mb-4">
@@ -38,7 +38,7 @@ export function Location() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-[#2BB8F2]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-[#2BB8F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#00C0F0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
@@ -57,8 +57,8 @@ export function Location() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-[#2BB8F2]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-[#2BB8F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-[#3535B0]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-[#00C0F0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
@@ -73,8 +73,8 @@ export function Location() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-[#2BB8F2]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-[#2BB8F2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-[#3535B0]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-[#00C0F0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
@@ -96,7 +96,7 @@ export function Location() {
                 href="https://maps.google.com/?q=Hospitales+Star+Medica+Ciudad+Juarez"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 w-full bg-[#2458D9] text-[#F8F8FA] px-6 py-3 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-center hover:bg-[#5963C7] transition-colors inline-flex items-center justify-center gap-2"
+                className="mt-8 w-full bg-gradient-to-r from-[#2A2A8E] to-[#3535B0] text-[#F5F4FA] px-6 py-3 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-center hover:from-[#3535B0] hover:to-[#4B45C4] transition-all inline-flex items-center justify-center gap-2"
               >
                 Abrir en Google Maps
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

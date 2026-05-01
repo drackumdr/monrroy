@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -26,19 +27,23 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#2458D9] shadow-lg" : "bg-[#2458D9]/95"
+        scrolled ? "bg-gradient-to-r from-[#2A2A8E] to-[#3535B0] shadow-lg" : "bg-[#3535B0]/95"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="#inicio" className="flex flex-col">
-            <span className="font-[family-name:var(--font-poppins)] font-bold text-lg text-[#F8F8FA] tracking-wide">
-              ORTHOPEDIC CENTER
-            </span>
-            <span className="font-[family-name:var(--font-poppins)] font-normal text-xs text-[#A7A9B8] tracking-[3px]">
-              CD. JUÁREZ
-            </span>
+          <Link href="#inicio" className="flex items-center">
+            <div className="bg-white/90 rounded-xl p-1 shadow-sm">
+              <Image
+                src="/logo.jpg"
+                alt="Orthopedic Center Cd. Juárez"
+                width={44}
+                height={44}
+                className="h-11 w-11 object-contain rounded-lg"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -47,14 +52,14 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-[family-name:var(--font-inter)] text-[#F8F8FA] hover:text-[#2BB8F2] transition-colors text-sm"
+                className="font-[family-name:var(--font-inter)] text-[#F8F8FA] hover:text-[#00C0F0] transition-colors text-sm"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="#contacto"
-              className="bg-[#F8F8FA] text-[#2458D9] px-5 py-2.5 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-sm hover:bg-white transition-colors"
+              className="bg-[#F5F4FA] text-[#3535B0] px-5 py-2.5 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-sm hover:bg-white transition-colors"
             >
               Agendar Cita
             </Link>
@@ -86,7 +91,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-[family-name:var(--font-inter)] text-[#F8F8FA] hover:text-[#2BB8F2] transition-colors text-sm"
+                  className="font-[family-name:var(--font-inter)] text-[#F8F8FA] hover:text-[#00C0F0] transition-colors text-sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -94,7 +99,7 @@ export function Navbar() {
               ))}
               <Link
                 href="#contacto"
-                className="bg-[#F8F8FA] text-[#2458D9] px-5 py-2.5 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-sm text-center hover:bg-white transition-colors"
+                className="bg-[#F5F4FA] text-[#3535B0] px-5 py-2.5 rounded-lg font-[family-name:var(--font-poppins)] font-semibold text-sm text-center hover:bg-white transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Agendar Cita

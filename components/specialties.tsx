@@ -62,7 +62,7 @@ const specialties = [
 
 export function Specialties() {
   return (
-    <section id="especialidades" className="bg-[#D9D9DE] py-20 lg:py-28">
+    <section id="especialidades" className="bg-[#E8E5F5] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#0A0A0A] mb-4">
@@ -76,8 +76,8 @@ export function Specialties() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {specialties.map((specialty, index) => (
             <AnimatedSection key={specialty.title} delay={index * 100}>
-              <div className="bg-[#F8F8FA] rounded-xl p-6 h-full hover:shadow-lg transition-all duration-300 group border-t-0 hover:border-t-[3px] hover:border-[#2458D9]">
-                <div className="w-14 h-14 bg-[#2BB8F2]/10 rounded-xl flex items-center justify-center text-[#2BB8F2] mb-4 group-hover:bg-[#2458D9] group-hover:text-[#F8F8FA] transition-colors">
+              <div className="bg-[#F5F4FA] rounded-xl p-6 h-full hover:shadow-lg transition-all duration-300 group border-t-0 hover:border-t-[3px] hover:border-[#3535B0]">
+                <div className="w-14 h-14 bg-[#3535B0]/10 rounded-xl flex items-center justify-center text-[#00C0F0] mb-4 group-hover:bg-[#3535B0] group-hover:text-[#F5F4FA] transition-colors">
                   {specialty.icon}
                 </div>
                 <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-xl text-[#0A0A0A] mb-3">

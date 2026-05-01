@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className="bg-[#F8F8FA]">
+    <html lang="es" className="bg-[#F5F4FA]">
       <head>
         <script
           type="application/ld+json"

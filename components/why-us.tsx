@@ -53,7 +53,7 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section className="bg-[#5963C7] py-20 lg:py-28">
+    <section className="bg-gradient-to-br from-[#2A2A8E] via-[#3535B0] to-[#4B45C4] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#F8F8FA] mb-4">
@@ -65,7 +65,7 @@ export function WhyUs() {
           {reasons.map((reason, index) => (
             <AnimatedSection key={reason.title} delay={index * 100}>
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-[#2BB8F2]/20 rounded-xl flex items-center justify-center text-[#2BB8F2] flex-shrink-0">
+                <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center text-[#00C0F0] flex-shrink-0">
                   {reason.icon}
                 </div>
                 <div>

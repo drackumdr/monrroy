@@ -59,7 +59,7 @@ export function Testimonials() {
   }
 
   return (
-    <section id="testimonios" className="bg-[#F8F8FA] py-20 lg:py-28">
+    <section id="testimonios" className="bg-[#F5F4FA] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#0A0A0A] mb-4">
@@ -98,7 +98,7 @@ export function Testimonials() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 w-10 h-10 bg-[#2458D9] text-[#F8F8FA] rounded-full flex items-center justify-center hover:bg-[#5963C7] transition-colors shadow-lg"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 w-10 h-10 bg-[#3535B0] text-[#F5F4FA] rounded-full flex items-center justify-center hover:bg-[#4B45C4] transition-colors shadow-lg"
             aria-label="Previous testimonial"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ export function Testimonials() {
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 w-10 h-10 bg-[#2458D9] text-[#F8F8FA] rounded-full flex items-center justify-center hover:bg-[#5963C7] transition-colors shadow-lg"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 w-10 h-10 bg-[#3535B0] text-[#F5F4FA] rounded-full flex items-center justify-center hover:bg-[#4B45C4] transition-colors shadow-lg"
             aria-label="Next testimonial"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ export function Testimonials() {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentIndex ? "bg-[#2458D9]" : "bg-[#D9D9DE]"
+                  index === currentIndex ? "bg-[#3535B0]" : "bg-[#E8E5F5]"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
@@ -136,7 +136,7 @@ export function Testimonials() {
 
 function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-sm border border-[#D9D9DE]/50 h-full">
+    <div className="bg-white rounded-xl p-6 shadow-sm border border-[#E8E5F5] h-full">
       <div className="flex items-center gap-4 mb-4">
         <div className="relative w-14 h-14 rounded-full overflow-hidden">
           <Image
@@ -150,7 +150,7 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
           <div className="font-[family-name:var(--font-poppins)] font-semibold text-[#0A0A0A]">
             {testimonial.name}
           </div>
-          <div className="font-[family-name:var(--font-inter)] text-sm text-[#2BB8F2]">
+          <div className="font-[family-name:var(--font-inter)] text-sm text-[#00C0F0]">
             {testimonial.treatment}
           </div>
         </div>
@@ -159,7 +159,7 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className="w-4 h-4 text-[#2BB8F2]"
+            className="w-4 h-4 text-[#3535B0]"
             fill="currentColor"
             viewBox="0 0 20 20"
           >

@@ -19,13 +19,13 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-[#0A0A0A] text-[#F8F8FA] py-16">
+    <footer className="bg-[#0A0A1E] text-[#F5F4FA] py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Column 1 - Brand */}
           <div>
             <Link href="#inicio" className="inline-block mb-4">
-              <span className="font-[family-name:var(--font-poppins)] font-bold text-lg text-[#2458D9]">
+              <span className="font-[family-name:var(--font-poppins)] font-bold text-lg text-[#7B78FF]">
                 ORTHOPEDIC CENTER
               </span>
               <br />
@@ -40,7 +40,7 @@ export function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-[#F8F8FA]/10 rounded-full flex items-center justify-center hover:bg-[#2458D9] transition-colors"
+                className="w-10 h-10 bg-[#F5F4FA]/10 rounded-full flex items-center justify-center hover:bg-[#3535B0] transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -49,7 +49,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-[#F8F8FA]/10 rounded-full flex items-center justify-center hover:bg-[#2458D9] transition-colors"
+                className="w-10 h-10 bg-[#F5F4FA]/10 rounded-full flex items-center justify-center hover:bg-[#3535B0] transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-[#F8F8FA]/10 rounded-full flex items-center justify-center hover:bg-[#2458D9] transition-colors"
+                className="w-10 h-10 bg-[#F5F4FA]/10 rounded-full flex items-center justify-center hover:bg-[#3535B0] transition-colors"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ export function Footer() {
                 <li key={specialty.label}>
                   <Link
                     href={specialty.href}
-                    className="font-[family-name:var(--font-inter)] text-[#A7A9B8] hover:text-[#2BB8F2] transition-colors text-sm"
+                    className="font-[family-name:var(--font-inter)] text-[#8A88A8] hover:text-[#00C0F0] transition-colors text-sm"
                   >
                     {specialty.label}
                   </Link>
@@ -96,12 +96,12 @@ export function Footer() {
               <li>Star Médica · Consultorio 909</li>
               <li>Cd. Juárez, Chihuahua</li>
               <li>
-                <a href="tel:6561132264" className="hover:text-[#2BB8F2] transition-colors">
+                <a href="tel:6561132264" className="hover:text-[#00C0F0] transition-colors">
                   (656) 113-2264
                 </a>
               </li>
               <li>
-                <a href="mailto:contacto@orthopediccenter.mx" className="hover:text-[#2BB8F2] transition-colors">
+                <a href="mailto:contacto@orthopediccenter.mx" className="hover:text-[#00C0F0] transition-colors">
                   contacto@orthopediccenter.mx
                 </a>
               </li>
@@ -118,7 +118,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="font-[family-name:var(--font-inter)] text-[#A7A9B8] hover:text-[#2BB8F2] transition-colors text-sm"
+                    className="font-[family-name:var(--font-inter)] text-[#8A88A8] hover:text-[#00C0F0] transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -130,7 +130,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-[#F8F8FA]/10 text-center">
-          <p className="font-[family-name:var(--font-inter)] text-[#A7A9B8] text-sm">
+          <p className="font-[family-name:var(--font-inter)] text-[#8A88A8] text-sm">
             © 2025 Orthopedic Center Cd. Juárez · Dr. Gustavo Monrroy. Todos los derechos reservados.
           </p>
         </div>

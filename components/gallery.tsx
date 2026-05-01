@@ -40,7 +40,7 @@ export function Gallery() {
   }
 
   return (
-    <section className="bg-[#D9D9DE] py-20 lg:py-28">
+    <section className="bg-[#E8E5F5] py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-poppins)] font-bold text-3xl md:text-4xl text-[#0A0A0A] mb-4">
@@ -64,7 +64,7 @@ export function Gallery() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-[#0A0A0A]/0 group-hover:bg-[#0A0A0A]/30 transition-colors flex items-center justify-center">
+                <div className="absolute inset-0 bg-[#2A2A8E]/0 group-hover:bg-[#2A2A8E]/30 transition-colors flex items-center justify-center">
                   <svg
                     className="w-10 h-10 text-[#F8F8FA] opacity-0 group-hover:opacity-100 transition-opacity"
                     fill="none"

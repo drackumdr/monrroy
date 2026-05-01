@@ -51,10 +51,13 @@ jobs:
         env:
           GITHUB_ACTIONS: true
 
+      - name: Prepare for deployment
+        run: mkdir monrroy && mv out/* monrroy/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./monrroy
 
   deploy:
     environment:

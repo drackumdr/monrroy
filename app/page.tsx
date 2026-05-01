@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
 import { Specialties } from "@/components/specialties"
+import { PrpSection } from "@/components/prp-section"
 import { WhyUs } from "@/components/why-us"
 import { Testimonials } from "@/components/testimonials"
 import { Gallery } from "@/components/gallery"
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <About />
       <Specialties />
+      <PrpSection />
       <WhyUs />
       <Testimonials />
       <Gallery />

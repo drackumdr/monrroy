@@ -51,12 +51,14 @@ const specialties = [
   },
   {
     title: "Medicina Regenerativa",
-    description: "PRP e infiltraciones para dolor musculoesquelético sin necesidad de cirugía.",
+    title: "Terapia PRP",
+    description: "Plasma Rico en Plaquetas para regenerar tejido en columna, rodilla, hombro, cadera, ligamentos y meniscos — sin cirugía.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
       </svg>
     ),
+    highlight: true,
   },
 ]
 
@@ -76,14 +78,17 @@ export function Specialties() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {specialties.map((specialty, index) => (
             <AnimatedSection key={specialty.title} delay={index * 100}>
-              <div className="bg-[#F5F4FA] rounded-xl p-6 h-full hover:shadow-lg transition-all duration-300 group border-t-0 hover:border-t-[3px] hover:border-[#3535B0]">
-                <div className="w-14 h-14 bg-[#3535B0]/10 rounded-xl flex items-center justify-center text-[#00C0F0] mb-4 group-hover:bg-[#3535B0] group-hover:text-[#F5F4FA] transition-colors">
+                <div className={`rounded-xl p-6 h-full hover:shadow-lg transition-all duration-300 group border-t-0 hover:border-t-[3px] ${specialty.highlight ? 'bg-gradient-to-br from-[#2A2A8E] to-[#3535B0] hover:border-[#00C0F0] text-[#F5F4FA]' : 'bg-[#F5F4FA] hover:border-[#3535B0]'}`}>
+                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-colors ${specialty.highlight ? 'bg-white/20 text-[#00C0F0] group-hover:bg-white/30' : 'bg-[#3535B0]/10 text-[#00C0F0] group-hover:bg-[#3535B0] group-hover:text-[#F5F4FA]'}`}>
                   {specialty.icon}
                 </div>
-                <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-xl text-[#0A0A0A] mb-3">
+                  <h3 className={`font-[family-name:var(--font-poppins)] font-semibold text-xl mb-3 ${specialty.highlight ? 'text-[#F5F4FA]' : 'text-[#0A0A0A]'}`}>
                   {specialty.title}
+                    {specialty.highlight && (
+                      <span className="ml-2 text-xs bg-[#00C0F0]/20 text-[#00C0F0] px-2 py-0.5 rounded-full font-normal align-middle">Disponible sin cirugía</span>
+                    )}
                 </h3>
-                <p className="font-[family-name:var(--font-inter)] text-[#A7A9B8] leading-relaxed">
+                  <p className={`font-[family-name:var(--font-inter)] leading-relaxed ${specialty.highlight ? 'text-[#F5F4FA]/85' : 'text-[#A7A9B8]'}`}>
                   {specialty.description}
                 </p>
               </div>

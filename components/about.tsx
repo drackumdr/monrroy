@@ -19,7 +19,7 @@ export function About() {
           <AnimatedSection className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/prp.jpg`}
                 alt="Dr. Gustavo Monrroy en consulta con paciente"
                 fill
                 className="object-cover"

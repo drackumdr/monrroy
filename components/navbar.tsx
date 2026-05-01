@@ -34,16 +34,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="#inicio" className="flex items-center">
-            <div className="bg-white/90 rounded-xl p-1 shadow-sm">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo.jpg`}
-                alt="Orthopedic Center Cd. Juárez"
-                width={44}
-                height={44}
-                className="h-11 w-11 object-contain rounded-lg"
-                priority
-              />
-            </div>
+            <Image
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo-real.png`}
+              alt="Orthopedic Center Cd. Juárez"
+              width={56}
+              height={56}
+              className="h-14 w-14 object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

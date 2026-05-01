@@ -5,7 +5,7 @@ import Link from "next/link"
 import { AnimatedSection } from "./animated-section"
 
 export function Hero() {
-  const badges = ["Cirugía de Columna", "Cirugía de Rodilla", "Artroscopia"]
+  const badges = ["Terapia PRP", "Cirugía de Columna", "Cirugía de Rodilla", "Cirugía de Hombro", "Medicina Regenerativa"]
   
   const stats = [
     { value: "15+", label: "años de experiencia" },

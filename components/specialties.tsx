@@ -50,7 +50,6 @@ const specialties = [
     ),
   },
   {
-    title: "Medicina Regenerativa",
     title: "Terapia PRP",
     description: "Plasma Rico en Plaquetas para regenerar tejido en columna, rodilla, hombro, cadera, ligamentos y meniscos — sin cirugía.",
     icon: (

@@ -1,3 +1,0 @@
-:HL["/monrroy/_next/static/chunks/10v.60tteb6zg.css","style"]
-:HL["/monrroy/_next/static/chunks/0a09ofy7ez5ie.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"fG9zG4dGl5_bqkLW5LRfr"}

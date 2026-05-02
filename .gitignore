@@ -13,4 +13,6 @@ next.user-config.*
 # Common ignores
 node_modules
 .next/
+out/
+monrroy/
 .DS_Store

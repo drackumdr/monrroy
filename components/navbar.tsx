@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -34,13 +33,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="#inicio" className="flex items-center">
-            <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo-real.png`}
+            <img
+              src="logo-real.png"
               alt="Orthopedic Center Cd. Juárez"
               width={56}
               height={56}
               className="h-14 w-14 object-contain"
-              priority
             />
           </Link>
 

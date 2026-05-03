@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { AnimatedSection } from "./animated-section"
 
@@ -84,12 +83,10 @@ export function Hero() {
           {/* Image */}
           <AnimatedSection delay={200} className="relative">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero.jpg`}
+              <img
+                src="hero.jpg"
                 alt="Dr. Gustavo Monroy - Especialista en Ortopedia y Traumatología"
-                fill
-                className="object-cover"
-                priority
+                className="absolute inset-0 h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#2A2A8E]/40 to-transparent" />
             </div>

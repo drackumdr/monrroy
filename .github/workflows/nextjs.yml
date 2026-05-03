@@ -42,12 +42,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build with Next.js
-        run: rm -rf out && pnpm next build
+        run: rm -rf out && pnpm build:static
         env:
           GITHUB_ACTIONS: true
-
-      - name: Disable Jekyll processing
-        run: touch out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

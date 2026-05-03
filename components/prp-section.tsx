@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { AnimatedSection } from "./animated-section"
 
@@ -22,11 +21,10 @@ export function PrpSection() {
           {/* Image */}
           <AnimatedSection className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-square max-w-md mx-auto lg:mx-0">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/prp.jpg`}
+              <img
+                src="prp.jpg"
                 alt="Terapia PRP - Plasma Rico en Plaquetas - Dr. Gustavo Monroy"
-                fill
-                className="object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
             {/* Decorative glow */}

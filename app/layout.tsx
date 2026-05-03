@@ -3,8 +3,6 @@ import { Poppins, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
-
 const poppins = Poppins({ 
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -25,19 +23,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: `${basePath}/icon-light-32x32.png`,
+        url: 'icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: `${basePath}/icon-dark-32x32.png`,
+        url: 'icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: `${basePath}/icon.svg`,
+        url: 'icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: `${basePath}/apple-icon.png`,
+    apple: 'apple-icon.png',
   },
 }
 

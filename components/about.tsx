@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { AnimatedSection } from "./animated-section"
 
 export function About() {
@@ -18,11 +17,10 @@ export function About() {
           {/* Image */}
           <AnimatedSection className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/prp.jpg`}
+              <img
+                src="prp.jpg"
                 alt="Dr. Gustavo Monroy en consulta con paciente"
-                fill
-                className="object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
             {/* Decorative element */}

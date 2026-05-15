@@ -67,46 +67,70 @@
     img { display: block; max-width: 100%; }
     a { text-decoration: none; color: inherit; }
 
-    /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
-      background: rgba(53, 53, 176, 0.95);
-      transition: all .3s;
-    }
-    .nav-inner {
-      max-width: 1280px; margin: 0 auto;
-      padding: 0 1.5rem;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 5rem;
-    }
-    .nav-logo img { height: 3.5rem; width: 3.5rem; object-fit: contain; }
-    .nav-links { display: none; align-items: center; gap: 2rem; }
-    .nav-links a {
-      font-family: 'Inter', sans-serif; color: var(--white);
-      font-size: .875rem; transition: color .2s;
-    }
-    .btn-nav {
-      background: var(--blue-light);
-      color: var(--blue-dark);
-      padding: .625rem 1.25rem;
-      border-radius: .5rem;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: .875rem;
-      transition: background .2s, color .2s;
-    }
-    .btn-nav:hover {
-      background: var(--white);
-      color: var(--blue-dark);
-    }
-    .nav-hamburger {
-      display: flex; background: none; border: none; cursor: pointer;
-      color: var(--white); padding: .5rem;
-    }
-    @media (min-width: 768px) {
-      .nav-links { display: flex; }
-      .nav-hamburger { display: none; }
-    }
+   /* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  background: rgba(53, 53, 176, 0.95);
+  transition: all .3s;
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 5rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav-logo img { height: 3.5rem; width: 3.5rem; object-fit: contain; }
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.nav-logo-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.nav-logo-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.03em;
+}
+.nav-links { display: none; align-items: center; gap: 2rem; }
+.nav-links a {
+  font-family: 'Inter', sans-serif; color: var(--white);
+  font-size: .875rem; transition: color .2s;
+}
+.btn-nav {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  padding: .625rem 1.25rem;
+  border-radius: .5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: .875rem;
+  transition: background .2s, color .2s;
+}
+.btn-nav:hover {
+  background: var(--white);
+  color: var(--blue-dark);
+}
+.nav-hamburger {
+  display: flex; background: none; border: none; cursor: pointer;
+  color: var(--white); padding: .5rem;
+}
+@media (min-width: 768px) {
+  .nav-links { display: flex; }
+  .nav-hamburger { display: none; }
+}
 
     /* ── HERO ── */
     #inicio {
@@ -526,12 +550,15 @@
   </style>
 </head>
 <body>
-
 <!-- ── NAV ── -->
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="#inicio">
       <img src="logo-real.png" alt="Orthopedic Center Cd. Juárez" width="56" height="56"/>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Dr. Gustavo Monroy</span>
+        <span class="nav-logo-subtitle">Cirujano Ortopedista</span>
+      </div>
     </a>
     <div class="nav-links">
       <a href="#inicio">Inicio</a>

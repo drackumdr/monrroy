@@ -906,7 +906,6 @@ nav {
     </div>
   </div>
 </section>
-
 <!-- ── terapia PRP ── -->
 <section id="instalaciones">
   <div class="section-inner">
@@ -916,25 +915,25 @@ nav {
       </p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="1.jpeg" alt="Instalación 1" />
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="1.jpeg" alt="Instalación 1" />
         <div class="gallery-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
           </svg></div>
       </div>
-      <div class="gallery-item"><img src="2.jpeg" alt="Instalación 2" />
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="2.jpeg" alt="Instalación 2" />
         <div class="gallery-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
           </svg></div>
       </div>
-      <div class="gallery-item"><img src="3.jpeg" alt="Instalación 3" />
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="3.jpeg" alt="Instalación 3" />
         <div class="gallery-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
           </svg></div>
       </div>
-      <div class="gallery-item"><img src="4.jpeg" alt="Instalación 4" />
+      <div class="gallery-item" onclick="openLightbox(3)"><img src="4.jpeg" alt="Instalación 4" />
         <div class="gallery-overlay"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
@@ -943,6 +942,82 @@ nav {
     </div>
   </div>
 </section>
+
+<!-- ── Lightbox / Carrusel ── -->
+<div id="lightbox"
+  style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:9999; align-items:center; justify-content:center;">
+
+  <!-- Botón cerrar -->
+  <button onclick="closeLightbox()"
+    style="position:absolute; top:1rem; right:1.5rem; background:none; border:none; color:white; font-size:2.5rem; cursor:pointer; line-height:1;">&times;</button>
+
+  <!-- Flecha izquierda -->
+  <button onclick="changeSlide(-1)"
+    style="position:absolute; left:1rem; background:rgba(255,255,255,0.15); border:none; color:white; font-size:2rem; padding:0.5rem 1rem; cursor:pointer; border-radius:4px;">&#8249;</button>
+
+  <!-- Imagen activa -->
+  <img id="lightbox-img" src="" alt=""
+    style="max-width:90vw; max-height:85vh; object-fit:contain; border-radius:8px; box-shadow:0 0 40px rgba(0,0,0,0.5);" />
+
+  <!-- Flecha derecha -->
+  <button onclick="changeSlide(1)"
+    style="position:absolute; right:1rem; background:rgba(255,255,255,0.15); border:none; color:white; font-size:2rem; padding:0.5rem 1rem; cursor:pointer; border-radius:4px;">&#8250;</button>
+
+  <!-- Contador -->
+  <div id="lightbox-counter" style="position:absolute; bottom:1.2rem; color:rgba(255,255,255,0.7); font-size:0.9rem;">
+  </div>
+</div>
+
+<script>
+  const images = [
+    { src: '1.jpeg', alt: 'Instalación 1' },
+    { src: '2.jpeg', alt: 'Instalación 2' },
+    { src: '3.jpeg', alt: 'Instalación 3' },
+    { src: '4.jpeg', alt: 'Instalación 4' },
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightbox();
+    const lb = document.getElementById('lightbox');
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // evita scroll de fondo
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function changeSlide(direction) {
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    const img = document.getElementById('lightbox-img');
+    const counter = document.getElementById('lightbox-counter');
+    img.src = images[currentIndex].src;
+    img.alt = images[currentIndex].alt;
+    counter.textContent = `${currentIndex + 1} / ${images.length}`;
+  }
+
+  // Cerrar al hacer clic fuera de la imagen
+  document.getElementById('lightbox').addEventListener('click', function (e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  // Navegar con teclado
+  document.addEventListener('keydown', function (e) {
+    const lb = document.getElementById('lightbox');
+    if (lb.style.display === 'none') return;
+    if (e.key === 'ArrowRight') changeSlide(1);
+    if (e.key === 'ArrowLeft') changeSlide(-1);
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
 
 <!-- ── UBICACIÓN ── -->
 <section id="ubicacion">
